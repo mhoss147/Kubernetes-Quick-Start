@@ -42,6 +42,10 @@
 - Create deployment menifest file
 
         touch deployment.yml
+
+        Add scripts from LA github to deployment.yml
+        
+
         
         
         
