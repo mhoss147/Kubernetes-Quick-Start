@@ -33,7 +33,23 @@
   --enable-managed-identity       (this to create cluster to crate it's infrastructure resources)
   
   
-  
+- Configure "kubectl" to run command against the created cluster
+
+
+        az aks get-credentials --name Cluster01 --resource-group $RG
+        
+        
+- Create deployment menifest file
+
+        touch deployment.yml
+        
+        
+        
+        
+        
+
+
+
 
 
   
