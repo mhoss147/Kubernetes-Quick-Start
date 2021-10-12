@@ -43,8 +43,43 @@
 
         touch deployment.yml
 
-        Add scripts from LA github to deployment.yml
+        Open the editor by clicking the curly braces { }, and open the deployment.yaml file
+
+        Copy and paste the scripts from the github to deployment.yml
+
+        Click the menu icon in the top right (...), and click Close Editor. Make sure to save the file
+
+        Deploy the application:
         
+        kubectl apply -f ./deployment.yaml
+
+        In the Azure Portal, under Kubernetes services, open Cluster01.
+        
+        In the left-hand menu, click Workloads
+
+        In the Deployments tab, open the new deployment, and verify that the pods are running
+
+        
+- Access the Application Externally
+        
+- Create a new file named service.yaml
+        
+        touch service.yaml
+        
+        Open the editor by clicking the curly braces { }, and open the service.yaml file
+
+        Copy and paste the contents of the service.yaml file from the GitHub repo, into the new file
+
+        Click the menu icon in the top right (...), and click Close Editor. Make sure to save the file.
+        Deploy the LoadBalancer service:
+        
+        kubectl apply -f service.yaml
+        
+        Back in the Azure Portal, in the Cluster01 overview, click Services and ingresses.
+        Open the newly deployed LoadBalancer.
+        
+        Click the External IP and verify access to the application.
+
 
         
         
