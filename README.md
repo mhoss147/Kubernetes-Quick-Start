@@ -19,12 +19,17 @@
 - Create a cluster
 
     az aks create \
+    
   --resource-group $RG \  (resource-group name or variable)
   
   --name Cluster1 \      (cluster name)
+  
   --node-count 3 \        (number of nodes)
+  
   --generate-ssh-keys \   (generate ssh keys to provide authentication to above nodes)
+  
   --node-vm-size Standard_B2s \   (node size, here we want a Standard_B2s size)
+  
   --enable-managed-identity       (this to create cluster to crate it's infrastructure resources)
   
   
